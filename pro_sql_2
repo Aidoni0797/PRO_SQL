@@ -112,3 +112,55 @@ url - "https://stepik.org/certificate/a77d..."
 
 Плюсы: Хранилища обеспечаивают быстрый и малозатратный доступ, нет жёсткой схемы отношения между данными.
 Минусы: Не подходит для сложной обработки или анализа данных.
+
+Документная модель
+
+Создана в начале 2000-х годов.
+
+Документные базы (также документоориентированные БД или хранилища документов) совместно используют базовую семантику доступа и поиска ключей и значений. Такие БД также
+используют ключ для уникальной идентификации данных. Разница между хранилищами ключ-значение и документными БД заключается в том, что вместо хранения blob-объектов,
+документированные базы хранят данные в структурированных форматах - JSON, BSON, XML.
+
+Doc1
+{
+"id":1825018,
+"profile":1825018,
+"is_private":false,
+"is_active":true,
+"is_guest":false,
+"is_organization":false,
+"is_author": true,
+"alias": "iron_programmer",
+"social_profiles":[
+19500,
+45005,
+10323,
+45006
+],
+"solved_steps_count":3594,
+"created_courses_count":44,
+"created_lessons_count":1886,
+"issues_certificates_count":7004,
+"followers_count":94201
+}
+
+Doc2
+{
+"id":4878629,
+"profile":4877629,
+"is_private":false,
+"is_active":true,
+"is_guest":false,
+"is_organization":false,
+"is_author":true,
+"alias":null,
+"social_profiles":[
+24103,
+24104,
+18108,
+28936
+],
+"solved_steps_count":681,
+"created_courses_count":7,
+"created_lessons"
+}
