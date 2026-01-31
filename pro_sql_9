@@ -22,3 +22,7 @@ SQ includes:
 
 - Facilties for defining and managing the database schema.
 - Facilties for defining integrity constraints and triggers.
+- Facilties for defining  database views.
+- Facilties for authorizing access to relations and their fields.
+- Facilties for defining physical-level structures that support efficient query execution.
+- Facilties for defining transaction savepoints and performing transaction commits and rollbacks.
