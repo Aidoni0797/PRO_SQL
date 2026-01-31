@@ -1,0 +1,28 @@
+pro_sql_16
+
+Ordering Data
+
+In SQL, you can use the ORDER BY clause to specify the order in which rows are returned in a result set.
+
+The ORDER BY clause comes after the FROM clause in a SELECT statement and is used to sort the result set based on one
+or more columns.
+
+Here is an example using a table called movies:
+SELECT * FROM movies ORDER BY title ASC;
+
+This statement selects all rows from the movies table and sorts the result set by the title column in
+ascending order (ASC).
+
+ASC for ASCENDING and DESC for DESCENDING
+
+Note: ASC is the default sort order.
+
+Ordering Data by multiple columns
+
+You can also sort the result set by multiple columns.
+For example:
+SELECT * FROM movies ORDER BY genre ASC, title ASC;
+
+This statement sorts the result set first by the genre column in ascending order, and then by the title column 
+in ascending order. The result set will be ordered first by  genre (A to Z) and then by title within each genre 
+(A to Z).
