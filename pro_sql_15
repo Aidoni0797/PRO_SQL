@@ -1,0 +1,11 @@
+pro_sql_15
+
+WHERE and ORDER BY
+
+You can use the LIMIT clause in combination with other clauses, such as WHERE and ORDER BY, to further 
+filter and sort the rows that are returned.
+
+For example:
+SELECT * FROM movies WHERE release_year>2010 ORDER BY title ASC LIMIT 10;
+
+This SELECT statement will return the first 10 movies released after 2010, sorted alphabetically by title.
