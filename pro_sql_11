@@ -1,0 +1,25 @@
+pro_sql_11
+
+Simple SELECT queries
+
+Here's an example of simple query:
+SELECT title, year FROM movies;
+
+This query would retrieve all rows from the movies table, and for each row it would return values in the title
+and year columns.
+
+For example, if the movies table contains the following rows:
+
+title - year
+The Green Mile - 1999
+The Shawshank Redemption - 1994
+The Dark Knight - 2008
+
+Then the query:
+SELECT title FROM movies;
+
+Would return the following result:
+title
+The Gren Mile
+The Shawshank Redemption
+The Dark Knight
