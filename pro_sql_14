@@ -1,0 +1,19 @@
+pro_sql_14
+
+OFFSET
+You can also specify an offset value to skip a certain number of rows before starting to return rows.
+
+id - title - release_year - genre
+1 - The Shawshank Redemption - 1994 - Drama
+2 - The Godfather - 1972 - Crime
+3 - The Godfather: Part II - 1974 - Crime
+4 - The Dark Knight - 2008 - Action
+5 - 12 Angry Men - 1957 - Drama
+
+For example:
+ELECT * FROM movies LIMIT 2 OFFSET 2;
+
+This SELECT statement will return 2 rows, starting  from the third row of the movies table.
+id - title - release_year - genre
+3 - The Godfather: Part II - 1974 - Crime
+4 - The Dark Knight - 2008 - Action
