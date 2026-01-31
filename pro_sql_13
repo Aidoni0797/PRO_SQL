@@ -1,0 +1,22 @@
+ pro_sql_13
+
+LIMIT
+Using the LIMIT clause in a SELECT statement to limit the number of rows returned from a table.
+
+id - title - release_year - genre
+1 - The Shawshank Redemption - 1994 - Drama
+2 - The Gosfather - 1972 - Crime
+3 - The Godfather: Part II - 1974 - Crime
+4 - The Dark Knight - 2008 - Action
+5 - 12 Angry Men - 1957 - Drama
+
+Here is example:
+
+SELECT * FROM movies LIMIT 3;
+
+This SELECT statement will return the first 3 rows from the movies table.
+
+id - title - release_year - genre
+1 - The Shawshank Redemption - 1994 - Drama
+2 - The Godfather - 1972 - Crime
+3 - The Godfather: Part II - 1974 - Crime
