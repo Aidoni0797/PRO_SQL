@@ -5,4 +5,8 @@ Introduction to SQL
 SQL (Structured Query Language) - is a declarative programming language that serves as the standard language for working with relational databases. It is used for creating,
 modifying and managing the structure of a database, as well as for executing queries on the database to retrieve data from it.
 
-SQL
+SQL is used in the majority of modern Database Managment System (DBMS) such as MySQL, Microsoft SQL Server, Oracle, and many others.
+
+Brief History of SQL
+
+The SQL language emerged after the
