@@ -2,4 +2,7 @@ pro_sql_9
 
 Introduction to SQL
 
-SQL (Structured Query Language) - is a declarative programming language that serves as the standard language for working with relational databases.
+SQL (Structured Query Language) - is a declarative programming language that serves as the standard language for working with relational databases. It is used for creating,
+modifying and managing the structure of a database, as well as for executing queries on the database to retrieve data from it.
+
+SQL
