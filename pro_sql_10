@@ -4,4 +4,6 @@ SQL Databases are databases that use Structured Query Language(SQL) to store, re
 systems (RDBMS).
 
 In a SQL Database, data is organized info tables, which consist of rows and columns. Each row represents a uniques record, and each column represents a specific piece of data within that record.
-For example, in a database that stores information about users, each row might represent a different user, and the columns might contain data such as the user's
+For example, in a database that stores information about users, each row might represent a different user, and the columns might contain data such as the user's name, email address, and password.
+
+SQ: Databases are widely used in various applications, such as web-based applications,  enterprise resourse planning (ERP) systems, and custormer relationship management (CRM)
