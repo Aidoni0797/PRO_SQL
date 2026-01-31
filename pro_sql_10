@@ -1,1 +1,6 @@
 pro_sql_10
+
+SQL Databases are databases that use Structured Query Language(SQL) to store, retrieve, and manipulate data. SQL is a language designed specifically for managing data held in relational database managment 
+systems (RDBMS).
+
+In a SQL Database, data is organized info tables, which consist of rows and columns. Each row represents a uniques
