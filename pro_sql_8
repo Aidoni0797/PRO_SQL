@@ -1,4 +1,18 @@
 pro_sql_8
 Welcom to the SQL Introduction course! (iDONi is studying in English for the first time)
 
-SQL is a declarative programming language used for creating, mody
+SQL is a declarative programming language used for creating, modifying data in a relational database managed by a corresponding database managment system.
+
+Databases are used in virtually all aspects of modern technology, including web development, data analytics, bussiness analysis, finance, healthcare, and much more.
+
+Therefore, it is important for a beginner IT specialist to understand and be able to use SQL because:
+
+1. SQL forms the foundation for working with databases.
+SQL is used for creating, modifying, and managing data in databases. It is the primary lanuage used for working with relational databases, and it is important to grasp its fundamentals
+in order to work with databases effectively.
+
+2. SQL is an essential skill for the IT industry.
+Many job vacancies in the IT industry require knowledge of SQL, as data is an integral part  of any IT specialist's work. Proficiency is SQL can open up more opportunities for a beginner
+specialist to work and enhance their qualifications.
+
+3. SQL enables
