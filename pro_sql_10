@@ -10,4 +10,4 @@ SQ: Databases are widely used in various applications, such as web-based applica
 They are popular because they are easy to use and provide a high level of data integrity and security.
 
 There are many different RDBMS software programs available, including popular ones sush as MySQL, Oracle and Microsoft SQL Server. Each of these programs has its own specific
-feautures and capabilities, but they all
+feautures and capabilities, but they all use SQL as the primary language for interacting with the database.
