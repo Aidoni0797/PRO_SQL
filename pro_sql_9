@@ -10,3 +10,9 @@ SQL is used in the majority of modern Database Managment System (DBMS) such as M
 Brief History of SQL
 
 The SQL language emerged after the development of ralational algebra, with its prototype being created in the late 1970s at IBM Research. It was implemented in the first prototype
+of the IBM System R relational DBMS. Since then, this language has been used by many commercial DBMSs and became so popular that it gradually becamethe de facto standard language
+for data manipulation in relational DBMSs.
+
+Relational algebra is a closed system of operations over relations in the relational data model. Operations of relational algebra are also referred to as relational operations.
+
+Initially, the language was named SEQUEL (Structured English Query Language), but later the word English was dropped from the acronym. On one hand
