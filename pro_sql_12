@@ -1,0 +1,48 @@
+pro_sql_12
+
+SELECT DISTINCT
+
+The SELECT DISTINCT statement is used in SQL to select only unique values from a table. It filters out any
+duplicates to give you a result set with unique values.
+
+Here is an example using a table called movies.
+
+The movies table has the following structure:
+
+id - title - genre
+1 - The Shawshank Redemption - Drama
+2 - The Godfather - Crime
+3 - The Godfather: Part II - Crime
+4 - The Dark Knight - Action
+5 - 12 Angry Men - Drama
+6 - Schindler's List - Drama
+7 - Pulp Fiction - Crime
+8 - The Lord of the Rings - Fantasy
+9 - The Good, the Bad and the Ugly - Western
+
+To select only unique genres from the movies table, you can use the following. SELECT DISTINCT statement:
+
+SELECT DISTINCT genre FROM movies;
+
+This will return the following result set:
+genre
+Drama
+Crime
+Action
+Fantasy
+Western
+
+Note that the result set only includes one row for each unique value in the genre column. Any duplicates are removed.
+
+You can also use the SELECT DISTINCT statement in conjuction with other SELECT clauses, such as WHERE and ORDER BY.
+For example, the following statement selects all unique genres from the movies table and sorts them alphabetically.
+
+SELECT DISTINCT genre FROM movies ORDER BY genre ASC;
+
+This will return the following result set:
+genre
+Action
+Crime
+Drama
+Fantasy
+Western
