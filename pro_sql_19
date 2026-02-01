@@ -7,4 +7,15 @@ The WHERE clause can be combined with AND, OR, and NOT SQL operators.
 Using the AND operator:
 SELECT * FROM movies WHERE release_year>2010 AND genre='Comedy';
 
-This query will select all rows from the movies table where
+This query will select all rows from the movies table where the release_year is after 2010 and the genre is Comedy.
+
+Using the OR operator:
+
+SELECT * FROM movies WHERE releas_year>2010 OR genre = 'Comedy';
+
+This query will select all rows from the movies table where the release year is after 2010 or the genre is Comedy.
+
+Using the NOT operator:
+SELECT * FROM movies WHERE NOTgenre = 'Comedy';
+
+This query will select all rows from the movies table where the genre is not Comedy.
