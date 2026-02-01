@@ -12,4 +12,12 @@ id - title - release_year - genre - reting
 2 - The Godfather - 1972 - Cime - 9
 3 - The Godfather: Part II  - 1974 - Crime - 9
 4 - The Dark Knight - 2008 - Action - 9
-5 - 12
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Birgraphy - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8 
+9 - Fight Club - 1999 - Drama - 8
+10 - THe Good, the Bad and the Ugly - 1966 - Western - 8
+
+The group the movies by genre and calculate the average rating for each genre, you could use the following SQL query:
+SELECT genre, AVG(rating)
