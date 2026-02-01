@@ -1,4 +1,5 @@
 pro_sql_22
 Subqueries
 
-A subquery is a SELECT statement that is nested within another SELECT, INSERT, UPDATE, DELETE, or SET statement, or within another subquery
+A subquery is a SELECT statement that is nested within another SELECT, INSERT, UPDATE, DELETE, or SET statement, or within another subquery.
+Subqueries are often used to select rows from a table based on certain conditions, and to pass these rows as parameters to 
