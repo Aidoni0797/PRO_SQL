@@ -1,0 +1,15 @@
+pro_sql_24
+
+Operator ALL
+The ALL operator in SQL is used to compare a value to every value in a list or returned by a subquery.
+Table movies
+
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Biography - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The
