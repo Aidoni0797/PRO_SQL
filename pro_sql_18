@@ -5,4 +5,5 @@ The following operators can be used in the WHERE clause:
 
 Equal to =
 
-This operator can be used to find movies that match a certain value in a spe
+This operator can be used to find movies that match a certain value in a specific column.
+For example, the following query
