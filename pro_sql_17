@@ -3,4 +3,15 @@ pro_sql_17
 Filtering Data
 Filtering in SQL is the process of selecting only certain rows from a table or query result set that meet specific criteria.
 
-You can use the WHERE clause in a SELECT, UPDATE, DELETE or MERGE statement
+You can use the WHERE clause in a SELECT, UPDATE, DELETE or MERGE statement to filter rows based on one or more conditions.
+
+Here is the basic syntax for using the WHERE clause in a SELECT statement:
+
+SELECT column1, column2, ... FROM table_name WHERE condition;
+
+Look at this example:
+
+SELECT statement with a WHERE clause to filter rows from a movies table in a SQL database:
+SELECT * FROM movies WHERE year>2010 AND rating='PG';
+
+This query would select all rows from the movies table where the year column is greater than 2010 and the rating column is equal to PG.
