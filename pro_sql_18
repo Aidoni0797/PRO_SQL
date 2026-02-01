@@ -12,4 +12,56 @@ SELECT / FROM movies WHERE rating = 5;
 
 Not equal to != <>
 
-This operator can be 
+This operator can be used to find movies that do not match a certain value in a specific column.
+For example, the following query would find all movies with a rating other than 5:
+
+SELECT * FROM movies WHERE rating <> 5;
+
+Greater than >
+
+This operator can be used to find movies with a value in a specific column that is greater than a certain value.
+For example, the following query would find all movies with a rating greater than 3:
+
+SELECT * FROM movies WHERE rating>3;
+
+Greater than or equal to >=
+
+This operator can be used to find movies with a value in a specific column that greater than or equal to a certain value.
+Forexample, the following query would find all movies with a rating greater thatn or equal to 3:
+
+SELECT * FROM movies WHERE rating>=3;
+
+Less than <
+
+This operator can be used to find movies with a value in a specific column that is less than a certain value.
+For example, thefollowing query would find all movies with a rating less than 5:
+
+SELECT * FROM movies WHERE rating<5;
+
+Less than or equal to <=
+
+This operator can be used to find movies with a value in a specific column that is less than or equal to a certain value.
+For example, the following  query would find all movies with a rating less than or equal to 3:
+
+SELECT * FROM movies WHERE rating<=3;
+
+BETWEEN
+
+This operator can be used to find movies with a value in a specific column that falls within a certain range.
+For example, the following query would find all movies with a rating between 3 and 5 (inclusive):
+
+SELECT * FROM movies WHERE rating BETWEEN 3 AND 5;
+
+LIKE
+
+This operator can be used to find movies with a specific pattern in a specific column. The percent sign (%) is used as a wildcard to match any number of characters. For example, 
+the following query would find all movies with a title that starts with the word "The":
+
+SELECT * FROM movies WHERE title LIKE 'The%';
+
+IN
+
+This operator can be used to find movies with a value in a specific column that is contained in a list of values.
+For example, the following query would find all movies with a rating of 3,4 or 5:
+
+SELECT * FROM movies WHERE rating IN (3,4,5);
