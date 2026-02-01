@@ -1,0 +1,15 @@
+pro_sql_21
+
+Grouping
+
+In SQL, the GROUP BY clause is used tp group together rows that have the same values in one or more columns.
+
+The GROUP BY clause is often used in conjuction with aggregate functions such as SUM, AVG, MIN, MAX and COUNT to perform calculations on the gourped data.
+
+For example, consider a movies table with the following columns:
+id - title - release_year - genre - reting
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Cime - 9
+3 - The Godfather: Part II  - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12
