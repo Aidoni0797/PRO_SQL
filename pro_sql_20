@@ -1,0 +1,7 @@
+pro_sql_20
+
+Aliasing
+Aliasing in SQL is the process of giving a temperory name to a table or column in a SELECT, FROM, WHERE clause.
+
+Aliasing is often used to make it easier to reference a table or column in a query, especially when the actual name is long or difficult to read or write. It can also be used to 
+specify a different name for a table 
