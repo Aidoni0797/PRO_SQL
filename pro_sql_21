@@ -41,5 +41,6 @@ Action - 9.0
 Crime - 8.666666666667
 Drama - 8.333333333333
 
-To round the results of an aggregate function such as AVG, you can use the ROUND function, The Round function takes two arguments: the value to round, and the number of decimal place, 
+To round the results of an aggregate function such as AVG, you can use the ROUND function, The Round function takes two arguments: the value to round, and the number of decimal place,
+you could use 
 
