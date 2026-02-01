@@ -20,4 +20,25 @@ id - title - release_year - genre - reting
 10 - THe Good, the Bad and the Ugly - 1966 - Western - 8
 
 The group the movies by genre and calculate the average rating for each genre, you could use the following SQL query:
-SELECT genre, AVG(rating)
+SELECT genre, AVG(rating) FROM movies GROUP BY genre
+
+genre - avg_rating
+Action - 9.0
+Adventure - 8.0
+Biography - 8.0
+Crime - 8.666666666667
+Drama - 8.333333333333
+Western - 8.0
+
+This would produce a result set with one row for each unique genre in thee movies table, and the ag_rating column would contain the average rating for all movies in that genre.
+
+You can also use the HAVING clause to filter the groups based on a condition.
+For example,  to only show genres with an average rating greater than 8, you could use the following query:
+SELECT genre, AVG(rating) AS avg_rating FROM movies GROUP BY genre HAVING ANG(rating)>8
+
+genre - avg_rating
+Action - 9.0
+Crime - 8.666666666667
+Drama - 8.333333333333
+
+To round the results of an aggregate function such as AVG, you can use the ROUND function, The Round
