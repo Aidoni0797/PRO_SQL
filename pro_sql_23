@@ -28,4 +28,15 @@ Here is an example of using the ANY operator in a WHERE clause to check if a val
 
 SELECT * FROM movies WHERE release_year = ANY (SELECT release_year FROM top_rated_movies) ORDER BY release_year;
 
-This query will return  all rows from the movies table where the release_year column has a value that is returned by the subquery SELECT release_year FROM 
+This query will return  all rows from the movies table where the release_year column has a value that is returned by the subquery SELECT release_year FROM top_rated_movies.
+The subquery returns a list of release years for top rated movies.
+
+The result table:
+id - title - release_year - genre - rating
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+1 - The Shawshank Redemption - 1994 - Drama - 9
+7 - Pulp Fiction - 1994 - Crime - 8
+4 - The Dark Knight - 2008 - Action - 9
+
+The ANY operator can also be used with comparison operators such as >,<,>=,<=,!=,and <>.
