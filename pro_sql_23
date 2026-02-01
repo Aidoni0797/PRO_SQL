@@ -1,0 +1,16 @@
+pro_sql_23
+
+Operator ANY
+
+The ANY operator in SQL is used in a comparison to check if a value matches any value in a subquery.
+
+Table movies
+id - title - release_year - genre - rating
+1 - The Shawshank Redemtion - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Biography - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings
