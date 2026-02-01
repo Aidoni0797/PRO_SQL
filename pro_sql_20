@@ -26,4 +26,5 @@ id - movie_title - year
 2 - The Godfather - 1978
 3 - The Dark Knight - 2008
 
-In this example, the movies table is aliased as 
+In this example, the movies table is aliased as m, and the title column is aliased as movie_title.
+The resulting output has the same data, but the title column is now called movie_title.
