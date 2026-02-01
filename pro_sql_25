@@ -1,0 +1,6 @@
+pro_sql_25
+
+Views
+In SQL, a view is a virtual table that is based on a SELECT statement.
+
+A view contains no data itself, but displays data from one
