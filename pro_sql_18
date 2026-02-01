@@ -6,4 +6,10 @@ The following operators can be used in the WHERE clause:
 Equal to =
 
 This operator can be used to find movies that match a certain value in a specific column.
-For example, the following query
+For example, the following query would find all movies with a rating of 5:
+
+SELECT / FROM movies WHERE rating = 5;
+
+Not equal to != <>
+
+This operator can be 
