@@ -42,5 +42,11 @@ Crime - 8.666666666667
 Drama - 8.333333333333
 
 To round the results of an aggregate function such as AVG, you can use the ROUND function, The Round function takes two arguments: the value to round, and the number of decimal place,
-you could use 
+you could use the following query:
+
+SELECT genre, ROUND(AVG(rating), 1) AS avg_rating FROM movies GROUP BY genre HAVING AVG(rating)>8
+genre - avg_rating
+Action - 9.0
+Crime - 8.6
+Drama - 8.3
 
