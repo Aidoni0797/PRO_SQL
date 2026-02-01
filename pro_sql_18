@@ -5,4 +5,4 @@ The following operators can be used in the WHERE clause:
 
 Equal to =
 
-This operator
+This operator can be used to find movies that match a certain value in a spe
