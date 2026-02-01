@@ -12,4 +12,29 @@ id - title - release_year - genre - rating
 5 - 12 Angry Men - 1957 - Drama - 8
 6 - Schindlers List - 1993 - Biography - 8
 7 - Pulp Fiction - 1994 - Crime - 8
-8 - The Lord of the Rings: The Return of 
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - The Good, the Bad and the Ugly - 1966 - Western - 8
+
+Table top_releated_movies
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action 9 
+
+Gere is an example of how to use the ALL operator in a SELECT statement:
+
+SELECT * FROM movies WHERE rating >= ALL (SELECT rating FROM top_rated_movies);
+
+This SELECT statement retrieves all rows from the movies table where the value in the rating column is greator than or equal to every value in the rating column of the top_rated_movies table.
+
+The result table:
+
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama -9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+
+The ALL operator can also be used with comparison operators such as >,<,>=,<=,!=, and <>.
