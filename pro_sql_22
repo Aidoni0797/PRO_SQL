@@ -27,4 +27,12 @@ id - title - release_year - genre - rating
 5 - 12 Angry Men - 1957 - Drama - 8
 
 Here is another example of a subquery.
-Find the title 
+Find the title of the highest rated movie:
+
+SELECT title FROM movies WHERE rating = (SELECT MAX(rating) FROM movies);
+
+title
+The Shawshank Redemtion
+The Godfather
+The Godfather: Part II
+The Dark Knight
