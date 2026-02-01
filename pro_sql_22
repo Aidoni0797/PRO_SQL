@@ -2,4 +2,29 @@ pro_sql_22
 Subqueries
 
 A subquery is a SELECT statement that is nested within another SELECT, INSERT, UPDATE, DELETE, or SET statement, or within another subquery.
-Subqueries are often used to select rows from a table based on certain conditions, and to pass these rows as parameters to 
+Subqueries are often used to select rows from a table based on certain conditions, and to pass these rows as parameters to the outer query.
+
+For example, consider a movies table with the following columns:
+
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8 
+6 - Schindlers List - 1993 - Biography - 8
+7 - pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - "The Good, the Bad and the Ugly" - 1966 - Western - 8
+
+Here is an example of subquery of a subquery in SQL:
+SELECT * From movies WHERE release_year = (SELECT MIN(release_year) FROM movies);
+
+This query will select all rows from the movies table where the release_year is equal to the minimum release_year in the table. The inner query (the subquery) SELECT MIN(release_year)
+FROM movies returns the minimum value of the release_year column in the movies table, and the outer query uses this value to filter the rows in the movies table.
+id - title - release_year - genre - rating
+5 - 12 Angry Men - 1957 - Drama - 8
+
+Here is another example of a subquery.
+Find the title 
