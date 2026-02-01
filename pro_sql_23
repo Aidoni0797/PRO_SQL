@@ -13,4 +13,19 @@ id - title - release_year - genre - rating
 5 - 12 Angry Men - 1957 - Drama - 8
 6 - Schindlers List - 1993 - Biography - 8
 7 - Pulp Fiction - 1994 - Crime - 8
-8 - The Lord of the Rings: The Return 
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - The Good, the Bad and the Ugly - 1966 - Western - 8
+
+Table top_rated_movies
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: PArt II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+
+Here is an example of using the ANY operator in a WHERE clause to check if a value matches any value returned by a subquery:
+
+SELECT * FROM movies WHERE release_year = ANY (SELECT release_year FROM top_rated_movies) ORDER BY release_year;
+
+This query will return  all rows from the movies table where the release_year column has a value that is returned by the subquery SELECT release_year FROM 
