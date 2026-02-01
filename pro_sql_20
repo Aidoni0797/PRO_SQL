@@ -4,4 +4,26 @@ Aliasing
 Aliasing in SQL is the process of giving a temperory name to a table or column in a SELECT, FROM, WHERE clause.
 
 Aliasing is often used to make it easier to reference a table or column in a query, especially when the actual name is long or difficult to read or write. It can also be used to 
-specify a different name for a table 
+specify a different name for a table or column in the output of a query.
+
+Here is an example of using aliasing in a SELECT statement to rename the title column of a movies table to movie_title:
+
+SELECT title AS movie_title FROM movies AS m;
+
+Here is an example of a movies table with sample data:
+
+id - title - year
+1 - The Shawshank - 1994
+2 - The Godfather - 1972
+3 - The dark Knight - 2008
+
+Here is the same table with an alias applied in a SELECT statement:
+
+SELECT m.id, m.title AS movie_title, m.year FROM movies AS m;
+
+id - movie_title - year
+1 - The Shawshank - 1994
+2 - The Godfather - 1978
+3 - The Dark Knight - 2008
+
+In this example, the movies table is aliased as 
