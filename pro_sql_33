@@ -6,4 +6,5 @@ in the right table.
 
 To use LEFT JOIN with the movies and reviews tables, you can write a SELECT statement like this:
 SELECT movies.title, movies.genre, reviews.review FROM movies LEFT JOIN reviews ON movies.id=reviews.movied_id;
-This SELECT statement combines rows from the movies and reviews tables based on th id column in the movies table matching the movie_id
+This SELECT statement combines rows from the movies and reviews tables based on th id column in the movies table matching the movie_id column in the reviews table. The ON clause
+specifies the relationship between the two tables, using the = operator to indicate that the id and movie_id values must match for the rows to be included in the result set.
