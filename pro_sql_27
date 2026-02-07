@@ -2,4 +2,6 @@ pro_sql_27
 
 Function MIN
 
-The MIN function
+The MIN function in SQL is used to retrieve the minimum value in a given column of a table.
+id - title - release_year-genre- rating
+1 - The Shawshank
