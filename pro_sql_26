@@ -1,0 +1,19 @@
+pro_sql_26
+Views
+
+In SQL, a view is a virtual table is based on a SELECT statement.
+A view contains no data itself, but displays data from one or more tables in the database.
+
+Views can be used to provide a specific perspective on the data in a database, or to restrict access to certain rows or columns of data. THey can be used to simplify complex queries. or to provide
+a consistent interface for users who need to access data in different ways.
+
+Here is an example of how to create a view in SQL:
+
+CREATE VIEW top_rated_movies
+AS
+SELECT id, title, release_year, genre, rating FROM movies WHERE rating=9;
+
+This view creates a virtual table that displays all rows from the movies table where the rating column is equal to 9.
+To query a view, you can use it just like a regular table:
+SELECT * FROM top_rated_movies;
+This SELECT statement retrieves all rows from the top_rated_movies view.
