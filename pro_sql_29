@@ -8,3 +8,33 @@ id - title - release_year - genre - rating
 2 - Tha Godfather - 1972 - Crime - 9
 3 - The Godfather: Part II - 1974 - crime - 9
 4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Biography - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - The Good, the Bad and the Ugly - 1966 - Western - 8
+
+Here are some examples of how you can use the COUNT function in SQL
+
+To count the number of rows in a table, you can use the following query:
+SELECT COUNT(*) FROM movies;
+
+This will return the total number of rows in the table.
+
+COUNT(*)
+10
+
+To count the number of rows in a table where a certain column has a specific value, you can use the following query:
+SELECT COUNT(*) FROM movies WHERE genre = 'Action';
+
+this will return the number of rows in the table where the value of the genre column is Action.
+COUNT(*)
+1
+
+To count the number of distinct values in a column, you can use the following query:
+SELECT  COUNT(DISTINCT genre) FROM movies;
+
+This will return the number of unique values in the genre column.
+COUNT(DISTINCT genre)
+6
