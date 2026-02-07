@@ -29,4 +29,9 @@ AVG(rating)
 
 To calculate the average rating of all movies released in the 1970s
 
-SELECT AVG(rating) FROM movies WHERE release_year BETWEEN
+SELECT AVG(rating) FROM movies WHERE release_year BETWEEN 1970 AND 1979;
+AVG(rating)
+9.0000
+
+To calculate the average rating of all movies with a rating of 8 or higher:
+SELECT
