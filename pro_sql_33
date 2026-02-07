@@ -3,3 +3,7 @@ LEFT JOIN
 
 LEFT JOIN is a type of join in SQL that combines rows from two or more tables, with the rows from the left table included in the result set even if there are no matching rows
 in the right table.
+
+To use LEFT JOIN with the movies and reviews tables, you can write a SELECT statement like this:
+SELECT movies.title, movies.genre, reviews.review FROM movies LEFT JOIN reviews ON movies.id=reviews.movied_id;
+This SELECT statement combines rows from the movies and reviews tables based on th id column in the movies table matching the movie_id
