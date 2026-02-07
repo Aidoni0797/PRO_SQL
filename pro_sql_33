@@ -1,4 +1,5 @@
 pro_sql_33
 LEFT JOIN
 
-LEFT JOIN is a type of join 
+LEFT JOIN is a type of join in SQL that combines rows from two or more tables, with the rows from the left table included in the result set even if there are no matching rows
+in the right table.
