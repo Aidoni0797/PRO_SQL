@@ -12,4 +12,21 @@ id - title - release_year - genre - rating
 7 - Pulp Fiction - 1994 - Crime - 8
 8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
 9 - Fight Club - 1999 - Drama - 8
-10 - The Good, the Bad and the Ugly
+10 - The Good, the Bad and the Ugly - 1966 - Western - 8
+
+Here are some examples of using the AVG function in a SELECT statement:
+
+To calculate the average raing of all movies in the table:
+SELECT AVG(rating) FROM movies;
+AVG(rating)
+8.4000
+
+To calculate the average rating of all movies in the Drama genre:
+SELECT AVG(rating) FROM movies WHERE genre = 'Drama';
+
+AVG(rating)
+8.3333
+
+To calculate the average rating of all movies released in the 1970s
+
+SELECT AVG(rating) FROM movies WHERE release_year BETWEEN
