@@ -1,0 +1,28 @@
+pro_sql_28
+
+Function MAX
+
+The MAX function in SQL is used toretrieve the maximum value in a given column of a table.
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Biograpgy - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - The Good, the Bad and the Ugly 1966 - Western - 8
+
+Here is an example of how you might use the MAX function in a SQL query to find the maximum value in the release_year column of a table called movies
+
+SELECT MAX(relese_year) FROM movies;
+
+This query would return the maximum value in the release_year column of the movies table. If the releasE_year column contains NULL values, the MAX function will ignonre them.
+
+MAX(release_year)
+2008
+
+You can also use a WHERE clause in your query to narow down the results to a specific subset of the table. For example, if you want to fond the maximum value in the release_year column 
+for movies that have a genre of Action, you can 
