@@ -34,4 +34,12 @@ AVG(rating)
 9.0000
 
 To calculate the average rating of all movies with a rating of 8 or higher:
-SELECT
+SELECT AVG(rating) FROM movies WHERE rating >=8;
+
+AVG(rating)
+8.4000
+
+To calculate the average rating of all movies with a title that starts with "The":
+SELECT AVG(rating) FROM movies WHERE title LIKE 'The%';
+AVG(rating)
+8.6667
