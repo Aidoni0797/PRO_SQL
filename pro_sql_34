@@ -3,3 +3,7 @@ RIGHT JOIN
 
 In a RIGHT JOIN all rows from the right-hand table are returned, and any matching rows from the left-hand table are also returned. If there is no match, NULL values are returned for
 left-hand table's columns.
+
+You can use a RIGHT JOIN to return all movies and any matching actors by joining the movies table with the actors table on the movie_id column:
+
+SELECT movies.title, movies.release_year, movies.genre, movies.rating, actors.name FROM movies RIGHT JOIN actors ON movies.id = actors.movie_id;
