@@ -4,4 +4,29 @@ Function MIN
 
 The MIN function in SQL is used to retrieve the minimum value in a given column of a table.
 id - title - release_year-genre- rating
-1 - The Shawshank
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - The Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - Crime - 9
+4 - The Dark Knight - 2008 - Action - 9
+5 - 12 Angry Men - 1957 - Drama - 8
+6 - Schindlers List - 1993 - Biography - 8
+7 - Pulp Fiction - 1994 - Crime - 8
+8 - The Lord of the Rings: The Return of the King - 2003 - Adventure - 8
+9 - Fight Club - 1999 - Drama - 8
+10 - The Good, the Bad and the Ugly - 1966 - Western - 8
+
+Here is an example of how you might use the MIN function in a SQL query to find the minimum value in the release_year, column of the table called movies.
+
+SELECT MIN(release_year) FROM movies;
+
+This query would return the minimum value in the release_year column of the movies table. If the release_year column contains NULL values, the MIN function will ignore them.
+MIN(release_year)
+1957
+
+You can also use a WHERE clause in your query to narrow down the results to a specific subset of the table. For example, if you want to find the minimum value in the release_year column
+for movies that have a genre is Drama, you can use the following query:
+SELECT MIN(release_year) FROM movies WHERE genre='Drama';
+
+MIN(release_year)
+1957
+This would return the minimum value in the release
