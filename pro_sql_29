@@ -1,0 +1,10 @@
+pro_sql_29
+Function COUNT
+
+The COUNT function is a function in SQL that allows you to count the number of rows in a table that meet a certain condition.
+
+id - title - release_year - genre - rating
+1 - The Shawshank Redemption - 1994 - Drama - 9
+2 - Tha Godfather - 1972 - Crime - 9
+3 - The Godfather: Part II - 1974 - crime - 9
+4 - The Dark Knight - 2008 - Action - 9
