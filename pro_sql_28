@@ -29,4 +29,6 @@ for movies that have a genre of Action, you can use the following query:
 SELECT MAX(release_year)
 FROM movies WHERE genre = 'Action';
 
-MAX()
+MAX(release_year)
+2008
+This would return the maximum value in the release_year column for all movies in the movies table that have
