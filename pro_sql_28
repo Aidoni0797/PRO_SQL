@@ -25,4 +25,8 @@ MAX(release_year)
 2008
 
 You can also use a WHERE clause in your query to narow down the results to a specific subset of the table. For example, if you want to fond the maximum value in the release_year column 
-for movies that have a genre of Action, you can 
+for movies that have a genre of Action, you can use the following query:
+SELECT MAX(release_year)
+FROM movies WHERE genre = 'Action';
+
+MAX()
