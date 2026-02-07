@@ -29,4 +29,4 @@ SELECT MIN(release_year) FROM movies WHERE genre='Drama';
 
 MIN(release_year)
 1957
-This would return the minimum value in the release
+This would return the minimum value in the release_year column for all movies in the movies table that have a genre of Drama.
