@@ -1,0 +1,31 @@
+pro_sql_31
+
+Function SUM
+
+The SUM function is used to calculate the sum of a given expression in a SELECT statement:
+id - title - release_year - genre - rating - budget
+1 - The Shawshank Redepmtion Redemption - 1994 - Drama - 9 - 250000000
+2 - The Godfather - 1972 - Crime - 9 - 600000000
+3 - The Godfather: Part II - 1974 - Crime - 9 - 1300000
+4 - The Dark Knight - 2008 - Action - 9 - 18500000
+5 - 12 Angry Men - 1957 - Drama - 8 - 337000
+
+Here are come examples of using the SUM function
+
+To calculate the total budget of all movies in the table movies where genre is Drama:
+SELECT SUM(budget) FROM movies WHERE genre='Drama';
+
+SUM(budget)
+25337000
+
+To calculate the total budget of all movies released in the 1970s:
+SELECT SUM(budget) FROM movies WHERE release_year BETWEEN 1970 AND 1979;
+
+SUM(budget)
+7300000
+
+To calculate the total budget of all movies with a rating of 8 or higher:
+SELECT SUM(budget) FROM movies WHERE rating>=8;
+
+SUM(budget)
+50757000
