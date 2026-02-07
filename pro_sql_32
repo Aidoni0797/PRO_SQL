@@ -1,3 +1,13 @@
 pro_sql_32
 INNER JOIN
-INNER JOIN is a type of 
+INNER JOIN is a type of join in SQL that combines rows from two or more tables based on a common column between them.
+When you use INNER JOIN, only the rows that have matching values in th common will be included in the result set.
+
+Table movies
+Table reviews
+
+To use INNER JOIN  with the movies and reviews tables, you can write a SELECT statement like this:
+SELECT movies.title, movies.genre, reviews.review FROM movies INNER JOIN reviews ON movies.id = reviews.movie_id;
+
+This SELECT statement combines rows from the movies and reviews tables based on the id column  in the movies table matching the movie_id column in the reviews table. The ON clause
+specifies the relationship between the two tables, using the = operator to indicate that the id and movie_id values must match for the rows to be inclu
